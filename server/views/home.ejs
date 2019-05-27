@@ -7,18 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <header>Her er en header</header>
-    <nav>
-        <a href="/server/views/home.ejs">Home</a>
-        <a href="/server/views/product.ejs">Product</a>
-        <a href="/server/views/contact.ejs">Contact</a>
-    </nav>
+    <%- include('partials/header') %>
+    <%- include('partials/nav') %>
     <main>
         <h1>Home</h1>
         <section>Her er section 1</section>
         <section>Her er section 2</section>
         <section>Her er section 3</section>
     </main>
-    <footer>Her er footer</footer>
+    <%- include('partials/footer') %>
 </body>
 </html>
